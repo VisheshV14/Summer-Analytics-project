@@ -17,6 +17,7 @@ The system is designed to simulate both static batch processing and real-time st
  
 ## Architecture Diagram
 
+```mermaid
 flowchart TD
     csv[CSV Data Source]
     csv -->|Read| input[Pathway Table]
@@ -29,6 +30,7 @@ flowchart TD
     model3 --> final[Final Output Table]
     final --> pandas[Export to Pandas]
     pandas --> viz[Bokeh Visualization]
+```
 
 ## Detailed Project Architecture and Workflow
 This system processes and prices parking lot occupancy data in a multi-stage pipeline:

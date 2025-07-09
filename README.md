@@ -35,7 +35,7 @@ flowchart TD
 ## Detailed Project Architecture and Workflow
 This system processes and prices parking lot occupancy data in a multi-stage pipeline:
 
-###Data Ingestion
+### Data Ingestion
 Static Mode (Batch Processing)
   Loads the cleaned dataset (dataset_clean.csv).
   Ensures reproducible outputs for development and testing.
@@ -44,7 +44,7 @@ Streaming Mode
   Continuously watches the CSV for new appended rows.
   Automatically recomputes pricing models as new data arrives.
 
-###Feature Engineering
+### Feature Engineering
 
 Vehicle Weight
 Encodes vehicle impact factor:

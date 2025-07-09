@@ -117,9 +117,5 @@ All data is exported to a Pandas DataFrame (plot_df) for visualization:
 In streaming mode:
   - .to_pandas() is not used (it will keep waiting for more data).
   - Instead, you define sinks:
-        - pw.io.json.write(
-        - table,
-        - destination_path="/tmp/live_prices.jsonl",
-        - overwrite=True
-    - )
+    - pw.io.json.write(table, destination_path="/tmp/live_prices.jsonl", overwrite=True)
   - This creates a continuously updating output file or stream.

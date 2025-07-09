@@ -61,7 +61,7 @@ Traffic Condition Mapping
 Timestamp Parsing
 All timestamps are parsed into datetime64 objects to support time-based pricing logic.
 
-###Model 1 — Baseline Dynamic Pricing
+### Model 1 — Baseline Dynamic Pricing
 Price = Base Price + α × Occupancy Ratio
   Base Price = 10
   α is determined by the time of day:
@@ -69,7 +69,7 @@ Price = Base Price + α × Occupancy Ratio
     Evening Peak (17–19): α = 0.2
     Off-peak: α = 0.1
 
-###Model 2 — Demand-Based Pricing
+### Model 2 — Demand-Based Pricing
 Computes a weighted demand score for each parking event:
   Demand = α × OccRatio
        + β × QueueLength
